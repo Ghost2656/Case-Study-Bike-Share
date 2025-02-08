@@ -15,7 +15,7 @@ FROM
     `centered-sol-442421-n6.Trip_Data.202005_TripData`;
 -- Did this multiple times 
 
--- I encountered some errors from some of the tables where some of the columns where a different datatype.
+-- I encountered some errors from some of the tables where some columns had a different datatype.
 --So I had to use the CAST() Functions to fix it.
 INSERT INTO
   `centered-sol-442421-n6.Trip_Data.BikeShare`
@@ -32,6 +32,9 @@ SELECT
   start_lng,
   end_lat,
   end_lng,
-  member_casual
+  member_casual,
+  ride_length,
+  day_of_week,
+  month
 FROM
   `centered-sol-442421-n6.Trip_Data.202103_TripData`
