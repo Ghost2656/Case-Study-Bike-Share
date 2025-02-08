@@ -42,3 +42,9 @@ FROM
 GROUP BY
   length_ride_id
 
+
+---Removing rows from ride_id whose LENGTH is less then 16
+DELETE FROM
+  `centered-sol-442421-n6.Trip_Data.BikeShare`
+WHERE
+  LENGTH(ride_id) < 16
