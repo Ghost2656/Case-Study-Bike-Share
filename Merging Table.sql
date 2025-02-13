@@ -15,7 +15,3 @@ FROM
     `centered-sol-442421-n6.Trip_Data.202102_TripData`
 -- Did this multiple times 
 
-
-  month
-FROM
-  `centered-sol-442421-n6.Trip_Data.202103_TripData`
